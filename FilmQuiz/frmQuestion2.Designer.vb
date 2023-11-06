@@ -29,8 +29,8 @@ Partial Class frmQuestion2
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -67,8 +67,8 @@ Partial Class frmQuestion2
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
-        Me.GroupBox1.Controls.Add(Me.RadioButton3)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer4)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer3)
         Me.GroupBox1.Controls.Add(Me.btnAnswer2)
         Me.GroupBox1.Controls.Add(Me.btnAnswer1)
         Me.GroupBox1.Location = New System.Drawing.Point(400, 157)
@@ -94,33 +94,33 @@ Partial Class frmQuestion2
         Me.btnAnswer2.AutoSize = True
         Me.btnAnswer2.Location = New System.Drawing.Point(13, 55)
         Me.btnAnswer2.Name = "btnAnswer2"
-        Me.btnAnswer2.Size = New System.Drawing.Size(90, 17)
+        Me.btnAnswer2.Size = New System.Drawing.Size(49, 17)
         Me.btnAnswer2.TabIndex = 1
         Me.btnAnswer2.TabStop = True
-        Me.btnAnswer2.Text = "RadioButton2"
+        Me.btnAnswer2.Text = "1921"
         Me.btnAnswer2.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'btnAnswer3
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(15, 85)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.btnAnswer3.AutoSize = True
+        Me.btnAnswer3.Location = New System.Drawing.Point(15, 85)
+        Me.btnAnswer3.Name = "btnAnswer3"
+        Me.btnAnswer3.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer3.TabIndex = 2
+        Me.btnAnswer3.TabStop = True
+        Me.btnAnswer3.Text = "1931"
+        Me.btnAnswer3.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'btnAnswer4
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(25, 117)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "RadioButton4"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.btnAnswer4.AutoSize = True
+        Me.btnAnswer4.Location = New System.Drawing.Point(25, 117)
+        Me.btnAnswer4.Name = "btnAnswer4"
+        Me.btnAnswer4.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer4.TabIndex = 3
+        Me.btnAnswer4.TabStop = True
+        Me.btnAnswer4.Text = "1935"
+        Me.btnAnswer4.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -156,8 +156,8 @@ Partial Class frmQuestion2
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnNext As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents btnAnswer4 As RadioButton
+    Friend WithEvents btnAnswer3 As RadioButton
     Friend WithEvents btnAnswer2 As RadioButton
     Friend WithEvents btnAnswer1 As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
