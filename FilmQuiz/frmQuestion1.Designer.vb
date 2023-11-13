@@ -22,6 +22,7 @@ Partial Class frmQuestion1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQuestion1))
         Me.lbl = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -33,6 +34,8 @@ Partial Class frmQuestion1
         Me.btnNext = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ProgressBarQ1 = New System.Windows.Forms.ProgressBar()
+        Me.tmrQuestion1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,11 +143,23 @@ Partial Class frmQuestion1
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "In what year was the frist lady for US was born"
         '
+        'ProgressBarQ1
+        '
+        Me.ProgressBarQ1.Location = New System.Drawing.Point(91, 388)
+        Me.ProgressBarQ1.Name = "ProgressBarQ1"
+        Me.ProgressBarQ1.Size = New System.Drawing.Size(100, 23)
+        Me.ProgressBarQ1.TabIndex = 7
+        '
+        'tmrQuestion1
+        '
+        Me.tmrQuestion1.Interval = 1000
+        '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ProgressBarQ1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.btnNext)
@@ -172,4 +187,6 @@ Partial Class frmQuestion1
     Friend WithEvents btnNext As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents ProgressBarQ1 As ProgressBar
+    Friend WithEvents tmrQuestion1 As Timer
 End Class

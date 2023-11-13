@@ -22,16 +22,19 @@ Partial Class frmQuestion2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQuestion2))
         Me.lbl = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
-        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
-        Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ProgressBarQ2 = New System.Windows.Forms.ProgressBar()
+        Me.tmrQuestion2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,27 +81,16 @@ Partial Class frmQuestion2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'btnAnswer1
+        'btnAnswer4
         '
-        Me.btnAnswer1.AutoSize = True
-        Me.btnAnswer1.Location = New System.Drawing.Point(13, 26)
-        Me.btnAnswer1.Name = "btnAnswer1"
-        Me.btnAnswer1.Size = New System.Drawing.Size(49, 17)
-        Me.btnAnswer1.TabIndex = 0
-        Me.btnAnswer1.TabStop = True
-        Me.btnAnswer1.Text = "1920"
-        Me.btnAnswer1.UseVisualStyleBackColor = True
-        '
-        'btnAnswer2
-        '
-        Me.btnAnswer2.AutoSize = True
-        Me.btnAnswer2.Location = New System.Drawing.Point(13, 55)
-        Me.btnAnswer2.Name = "btnAnswer2"
-        Me.btnAnswer2.Size = New System.Drawing.Size(49, 17)
-        Me.btnAnswer2.TabIndex = 1
-        Me.btnAnswer2.TabStop = True
-        Me.btnAnswer2.Text = "1921"
-        Me.btnAnswer2.UseVisualStyleBackColor = True
+        Me.btnAnswer4.AutoSize = True
+        Me.btnAnswer4.Location = New System.Drawing.Point(25, 117)
+        Me.btnAnswer4.Name = "btnAnswer4"
+        Me.btnAnswer4.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer4.TabIndex = 3
+        Me.btnAnswer4.TabStop = True
+        Me.btnAnswer4.Text = "1935"
+        Me.btnAnswer4.UseVisualStyleBackColor = True
         '
         'btnAnswer3
         '
@@ -111,16 +103,27 @@ Partial Class frmQuestion2
         Me.btnAnswer3.Text = "1931"
         Me.btnAnswer3.UseVisualStyleBackColor = True
         '
-        'btnAnswer4
+        'btnAnswer2
         '
-        Me.btnAnswer4.AutoSize = True
-        Me.btnAnswer4.Location = New System.Drawing.Point(25, 117)
-        Me.btnAnswer4.Name = "btnAnswer4"
-        Me.btnAnswer4.Size = New System.Drawing.Size(49, 17)
-        Me.btnAnswer4.TabIndex = 3
-        Me.btnAnswer4.TabStop = True
-        Me.btnAnswer4.Text = "1935"
-        Me.btnAnswer4.UseVisualStyleBackColor = True
+        Me.btnAnswer2.AutoSize = True
+        Me.btnAnswer2.Location = New System.Drawing.Point(13, 55)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer2.TabIndex = 1
+        Me.btnAnswer2.TabStop = True
+        Me.btnAnswer2.Text = "1921"
+        Me.btnAnswer2.UseVisualStyleBackColor = True
+        '
+        'btnAnswer1
+        '
+        Me.btnAnswer1.AutoSize = True
+        Me.btnAnswer1.Location = New System.Drawing.Point(13, 26)
+        Me.btnAnswer1.Name = "btnAnswer1"
+        Me.btnAnswer1.Size = New System.Drawing.Size(49, 17)
+        Me.btnAnswer1.TabIndex = 0
+        Me.btnAnswer1.TabStop = True
+        Me.btnAnswer1.Text = "1920"
+        Me.btnAnswer1.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -131,11 +134,23 @@ Partial Class frmQuestion2
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
+        'ProgressBarQ2
+        '
+        Me.ProgressBarQ2.Location = New System.Drawing.Point(435, 396)
+        Me.ProgressBarQ2.Name = "ProgressBarQ2"
+        Me.ProgressBarQ2.Size = New System.Drawing.Size(100, 23)
+        Me.ProgressBarQ2.TabIndex = 6
+        '
+        'tmrQuestion2
+        '
+        Me.tmrQuestion2.Interval = 1000
+        '
         'frmQuestion2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ProgressBarQ2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnNext)
@@ -161,4 +176,6 @@ Partial Class frmQuestion2
     Friend WithEvents btnAnswer2 As RadioButton
     Friend WithEvents btnAnswer1 As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ProgressBarQ2 As ProgressBar
+    Friend WithEvents tmrQuestion2 As Timer
 End Class

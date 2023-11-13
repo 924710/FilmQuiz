@@ -4,7 +4,7 @@
             playerScore = playerScore + 1
         End If
         frmHighScore.Show()
-        frmHighScrore.doScore()
+        frmHighScore.doScore()
         Me.Hide()
     End Sub
 End Class
