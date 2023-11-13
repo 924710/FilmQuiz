@@ -23,7 +23,7 @@ Partial Class frmHighScore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstHighScore = New System.Windows.Forms.ListBox()
-        Me.lblmassage = New System.Windows.Forms.Label()
+        Me.lblMessage = New System.Windows.Forms.Label()
         Me.btnAgain = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -38,15 +38,15 @@ Partial Class frmHighScore
         Me.lstHighScore.Size = New System.Drawing.Size(231, 84)
         Me.lstHighScore.TabIndex = 1
         '
-        'lblmassage
+        'lblMessage
         '
-        Me.lblmassage.AutoSize = True
-        Me.lblmassage.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblmassage.Location = New System.Drawing.Point(100, 20)
-        Me.lblmassage.Name = "lblmassage"
-        Me.lblmassage.Size = New System.Drawing.Size(571, 24)
-        Me.lblmassage.TabIndex = 2
-        Me.lblmassage.Text = "congratulations your scoure will be added to the hall of fame"
+        Me.lblMessage.AutoSize = True
+        Me.lblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMessage.Location = New System.Drawing.Point(100, 20)
+        Me.lblMessage.Name = "lblMessage"
+        Me.lblMessage.Size = New System.Drawing.Size(571, 24)
+        Me.lblMessage.TabIndex = 2
+        Me.lblMessage.Text = "congratulations your scoure will be added to the hall of fame"
         '
         'btnAgain
         '
@@ -75,7 +75,7 @@ Partial Class frmHighScore
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnAgain)
-        Me.Controls.Add(Me.lblmassage)
+        Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.lstHighScore)
         Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
@@ -85,7 +85,7 @@ Partial Class frmHighScore
     End Sub
 
     Friend WithEvents lstHighScore As ListBox
-    Friend WithEvents lblmassage As Label
+    Friend WithEvents lblMessage As Label
     Friend WithEvents btnAgain As Button
     Friend WithEvents btnQuit As Button
 End Class
