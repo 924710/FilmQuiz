@@ -1,9 +1,15 @@
 ﻿Public Class frmMain
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         playerScore = 0
-        playerName = txtPlayerName.Text
-        frmQuestion1.Show()
-        Me.Hide()
+        If (txtName.Text = "") Then
+            MsgBox("please Enter your Name")
+        Else
+            playerName = txtName.Text
+            frmQuestion1.Show()
+            frmQuestion1.init()
+            txtName.Text = ""
+            Me.Hide()
+        End If
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click

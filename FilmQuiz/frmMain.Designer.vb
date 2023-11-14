@@ -30,7 +30,7 @@ Partial Class frmMain
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.txtPlayerName = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,14 +105,14 @@ Partial Class frmMain
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'txtPlayerName
+        'txtName
         '
-        Me.txtPlayerName.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPlayerName.Location = New System.Drawing.Point(74, 419)
-        Me.txtPlayerName.Name = "txtPlayerName"
-        Me.txtPlayerName.Size = New System.Drawing.Size(175, 24)
-        Me.txtPlayerName.TabIndex = 8
-        Me.txtPlayerName.Text = "Player Name"
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(74, 419)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(175, 24)
+        Me.txtName.TabIndex = 8
+        Me.txtName.Text = "Player Name"
         '
         'PictureBox1
         '
@@ -129,7 +129,7 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(901, 465)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.txtPlayerName)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.PictureBox5)
@@ -156,6 +156,6 @@ Partial Class frmMain
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents btnStart As Button
     Friend WithEvents btnQuit As Button
-    Friend WithEvents txtPlayerName As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents PictureBox1 As PictureBox
 End Class

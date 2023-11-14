@@ -14,6 +14,19 @@
             playerScore = playerScore + 1
         End If
         frmQuestion2.Show()
+        frmQuestion2.init()
         Me.Hide()
+    End Sub
+
+    Private Sub tmrQuestion1_Tick(sender As Object, e As EventArgs) Handles tmrQuestion1.Tick
+        progressCount = progressCount + 1
+        ProgressBarQ1.PerformStep()
+        If progressCount = 10 Then
+            tmrQuestion1.Enabled = False
+            MsgBox("Too slow Try Again")
+            frmQuestion2.Show()
+            frmQuestion2.init()
+            Me.Hide()
+        End If
     End Sub
 End Class
